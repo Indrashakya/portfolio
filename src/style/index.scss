@@ -1,0 +1,183 @@
+/* UTILITIES */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  
+  padding: 20px 0;
+  background-color: white;
+  box-shadow: rgba(87, 87, 87, 0.15) 0px 48px 100px 0px;  color: #555;
+
+ .navbar-container{
+  width:80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links a {
+  color: #555;
+    padding: 10px 18px;
+  transition: 0.3s ease;
+  &:hover {
+    background-color: steelblue;
+    border-radius: 5px;
+    
+    
+      color: white;
+  
+    
+  }
+  
+
+}
+  .logo{
+  margin-bottom:-32px;
+  margin-left: 22px;
+  }
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+}
+/* DROPDOWN MENU */
+.services {
+  position: relative;
+}
+.dropdown {
+  background-color: #4334;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+.dropdown li:hover {
+  background-color: #4334;
+}
+.services:hover .dropdown {
+  display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type="checkbox"] {
+  display: none;
+  top: 0;
+  transition: all 2s;
+}
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #4334;
+    right: 0;
+    left: 0;
+    top: 4.9rem;
+    text-align: center;
+    padding: 16px 0;
+    height: auto;
+    transition: 2s ease;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #433354;
+    transition: 0.3s ease;
+  }
+  .menu li {
+    margin-top: 12px;
+    width: 100%;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger:hover {
+    color: gray;
+    transition: color;
+    transition-delay: 200ms;
+  }
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #433354;
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
+  }
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+/* ======= body ========= */
+
+#body {
+  width: 80%;
+  margin:0 auto;
+  padding:1rem 0;height: 80vh;
+}
+/*======= about ========= */ 
+.about {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+@import './contact';
+@import './about';

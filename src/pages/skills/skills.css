@@ -1,0 +1,40 @@
+.skillsContainer{
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+
+.cards_skill {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 400px));
+    grid-gap: 40px;
+    
+  }
+  
+  .card_skill {
+    padding: 1rem;
+    grid-column-end: span 4;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    color:#333;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .card_skill:hover {
+    transform: translateY(-7px);
+  }
+  .skillsContainer .text--medium {
+
+    color: #555;
+  }
+
+  .skillsContainer .card__price{
+    color: #fff;
+
+  }
