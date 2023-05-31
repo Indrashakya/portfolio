@@ -1,5 +1,4 @@
 #contact {
-height:70vh;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -66,5 +65,31 @@ width: 100%;
                 }
             }
         }
+        
     }
+    
 }
+
+@media (max-width: 768px) {
+    #contact .container {
+      flex-direction: column;
+      gap: 4rem;
+  
+      .contact__options {
+        flex-wrap: wrap;
+  
+        h2,
+        h5 {
+          font-size: 1.5rem;
+        }
+      }
+  
+      .contact_form {
+        width: 100%;
+  
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }

@@ -114,3 +114,25 @@ textarea{
     background-color: #90acd1;
     background-position: left bottom;
 }
+
+@media (min-width: 1024px) {
+    .contact-logo {
+        font-size: 25px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+    }
+
+    .contact-heading {
+        font-size: 18px;
+    }
+
+    .contact-value {
+        font-size: 15px;
+    }
+
+    .contact-button {
+        padding: 15px 43px;
+    }
+}

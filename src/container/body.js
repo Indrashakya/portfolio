@@ -2,7 +2,7 @@
 
 function Body({children}) {
     return (
-      <div id="body">
+      <div className="container">
         {children}
       </div>
     );

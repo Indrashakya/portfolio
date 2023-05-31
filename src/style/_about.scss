@@ -10,13 +10,34 @@
   .about-container {
     display: grid;
   }
+  @media screen and (max-width: 480px) {
+    /* Adjust the styles for screens with a maximum width of 480px */
+    .about-header {
+      font-size: 1.8rem;
+    }
   
-  @media screen and (min-width: 960px) {
-    .about-container {
-      grid-template-columns: 50% 50%;
-      height: var(--min-height);
+    .divider {
+      width: 50%;
+    }
+  
+    .about-intro,
+    .about-details {
+      font-size: 12px;
+    }
+  
+    .about-title {
+      width: 80px;
     }
   }
+  // @media screen and (min-width: 960px) {
+  //   .about-container {
+  //     grid-template-columns: 50% 50%;
+  //     height: var(--min-height);
+  //   }
+  //   p{
+  //     width: 100%;
+  //   }
+  // }
   /* about me */
   .about-header {
     color: var(--main-font);

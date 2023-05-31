@@ -38,3 +38,23 @@
     color: #fff;
 
   }
+
+
+@media (max-width: 768px) {
+  .skillsContainer{
+    grid-template-columns: 1fr ;
+    display: block;
+  
+}
+
+
+.cards_skill {
+    grid-column: 0;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 40px;
+    
+  }
+}
+
+

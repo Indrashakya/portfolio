@@ -106,7 +106,7 @@
       grid-gap: 20px;
     }
     .card {
-      grid-column-end: span 6;
+      grid-column-end: span 18;
     }
   }
   
