@@ -39,7 +39,7 @@ setMessage('')
               <RiMessengerLine className="contact__option-icon" />
               <h4>linkedin</h4>
               <h5>Indra Shakya</h5>
-              <a href="https://www.linkedin.com/in/indra-shakya/">Connect with me</a>
+              <a href="https://www.linkedin.com/in/indra-s-2a83621a5/">Connect with me</a>
             </div>
             <div className="contact__option">
               <RiWhatsappLine className="contact__option-icon" />
