@@ -1,7 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faCss3Alt, faHtml5, faReact, faFileCode } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faCss3Alt, faHtml5, faReact, faFileCode, faBootstrap, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import Body from "../../container/body";
 import './skills.css';
+import { faCalculator, faFire, faFireAlt } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
+import { Progress } from 'antd';
+import { ProgressBar } from 'react-bootstrap';
+
 
 function Skills() {
   const skillsArray = [
@@ -21,24 +26,45 @@ function Skills() {
       icon: faHtml5
     },
     {
+      name: "BootStrap",
+      level: '70%',
+      icon:faBootstrap
+    },
+    {
+      name: "HTML5",
+      level: ()=>{
+        return(
+          <span>
+            <ProgressBar percent={parseInt(80)} width={80}/>
+          </span>
+        )
+      },
+      icon: faHtml5
+    },
+    {
       name: "React",
       level: '70%',
       icon: faReact
     },
     {
-      name: "Typescript",
-      level: '70%',
-      // icon: faFileCode
-    },
-    {
-      name: "Ant Design",
-      level: '70%',
-      // icon: faFileCode // Use the appropriate Font Awesome icon here
-    },
-    {
       name: "Ag-Grid-react",
       level: '70%',
-      // icon: faFileCode // Use the appropriate Font Awesome icon here
+      icon: faReact
+    },
+    {
+      name: "Firebase",
+      level: '70%',
+      icon: faFireAlt 
+    },
+    {
+      name: "MS Office ",
+      level: '70%',
+      icon: faMicrosoft 
+    },
+    {
+      name: "Accounting ",
+      level: '70%',
+      icon: faCalculator
     },
   ];
 
