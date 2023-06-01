@@ -1,5 +1,5 @@
 /* UTILITIES */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,35 @@ a {
 }
 li {
   list-style: none;
+}
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh !important;
+  .description{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .description p{
+    text-align: center;
+    width:1000px;
+  font-size: 1.25rem;
+  font-weight: 200;
+  }
+}
+
+
+#about {
+  .main_title{
+    font-size: 1.5rem;
+  }
+  .main_name{
+    font-size: 3rem;
+    font-weight: 600;
+  }
 }
 
 /* NAVBAR STYLING STARTS */
@@ -36,14 +65,9 @@ li {
   &:hover {
     background-color: steelblue;
     border-radius: 5px;
-    
-    
-      color: white;
-  
-    
-  }
-  
 
+      color: white;
+  }
 }
   .logo{
   margin-bottom:-32px;
@@ -82,6 +106,11 @@ li {
 }
 .services:hover .dropdown {
   display: block;
+}
+.navbar {
+  a{
+    color:white;
+  }
 }
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
@@ -153,9 +182,11 @@ input[type="checkbox"] {
 /* ======= body ========= */
 
 #body {
-  width: 80%;
-  margin:0 auto;
-  padding:1rem 0;height: 80vh;
+  // width: 80%;
+  // margin: 0 auto;
+  // padding: 1rem 0;
+  min-height: 80vh;
+
 }
 /*======= about ========= */ 
 .about {
@@ -174,10 +205,5 @@ input[type="checkbox"] {
 }
 
 
-
-
-
-
-
 @import './contact';
-@import './about';
+@import './home';

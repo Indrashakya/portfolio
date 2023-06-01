@@ -23,27 +23,18 @@ function Navbar() {
   const menuClass = `dropdown-menu${state.isOpen ? " show" : ""}`;
 
   return (
-    <nav className="container navbar navbar-expand-lg navbar-light bg-light">
+    <div style={{background:'#333',color:'white'}}>
+
+    <nav className="container navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
-        Indra
+       <span style={{color:'#8bc8f7'}}> Indra </span> Shakya
       </Link>
       <button className="navbar-toggler" type="button" onClick={toggleMenu}>
         <span className="navbar-toggler-icon" />
       </button>
       <div className={"collapse  ml-auto navbar-collapse justify-content-end " + show}>
         <div className="navbar-nav justify-content-end">
-          <Link
-          style={{margin:'0 0.75rem'}}
-            className={state.homeLinkClass}
-            to="/"
-            onClick={() =>
-              state.homeLinkClass === "nav-item nav-link"
-                ? "nav-item nav-link active"
-                : "nav-item nav-link"
-            }
-          >
-            Home 
-          </Link>
+          
           <Link
           style={{margin:'0 0.75rem'}}
 
@@ -119,6 +110,8 @@ function Navbar() {
         </div>
       </div>
     </nav>
+    </div>
+
   );
 }
 

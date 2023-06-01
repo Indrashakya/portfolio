@@ -3,6 +3,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
+margin:2rem 0;
     .container{
         display: flex;
         flex-direction: column-reverse;
@@ -16,6 +17,11 @@ width: 100%;
             display: flex;
             gap:2rem;
             text-align: center;
+            .contact__option-icon{
+                font-size: 2rem;
+                margin: 0.35rem 0;
+                color:steelblue;
+            }
             h2{
                 font-size: 2rem;
                 color:#555 !important;
@@ -71,13 +77,16 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
+    #contact{
+        margin: 2rem 0;
+    }
     #contact .container {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 4rem;
   
       .contact__options {
         flex-wrap: wrap;
-  
+        justify-content: center;
         h2,
         h5 {
           font-size: 1.5rem;

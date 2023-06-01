@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Body from "../../container/body";
-import "./aboutMe.css";
+import "./aboutMe.scss";
 import Logo from "../../assets/home.png";
 import Resume from "../../assets/resume.pdf";
 function AboutMe() {
@@ -13,17 +13,27 @@ function AboutMe() {
           </div>
           <div className="description">
             <p>
-              My Developer with Lackground Accounting. I know no one believe
-              this but I am really interested to learning new technologies and
-              new field. I am passionate about technology and implementing them
-              in this constantly evolving industry. 1am currently Serving as a
-              frontend developer for at Lunavi Clint is DHS
-              Nebraska(https://iserve.nebraska.gov)
+             
+              <br />
+              <br />
+              I am a React Frontend Engineer. I have expertise in developing
+              frontend using HTML5, CSS, ReactJS, bootstrap and MUI with the
+              webpage Browser Compatibility and Responsive Web Design. I am
+              skilled in the use of these frameworks to develop web
+              applications based on Single Page Applications (SPA)
+              architectures.
+              <br />
+              <br />I belief Information technology has the power to change
+              the world and control the world, and I want to be a part of IT.
+              I realize it will take collaboration, creativity, and dedication
+              to make an impact, but I'm willing to do what it takes to make
+              sure that impact is positive.
+
             </p>
           </div>
           <div className="action_container">
-            <Link to="/about">
-              <button>ABOUT ME</button>
+            <Link to="/contact">
+              <button>CONTACT ME</button>
             </Link>
             <a href={Resume} download>
               <button>GET CV</button>

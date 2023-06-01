@@ -1,3 +1,4 @@
+import { FaGithub, FaRocket } from 'react-icons/fa'
 import './project.css'
 
 const Projects = () => {
@@ -5,7 +6,7 @@ const Projects = () => {
     <div id="projects">
       <main>
         <section className="cards">
-          <div className="card">
+        <div className="card">
             <div className="card__image-container">
               <img
                 src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80"
@@ -14,11 +15,16 @@ const Projects = () => {
             </div>
             <div className="card__content">
               <p className="card__title text--medium">
-                Here's the Title of an Awesome Course
+                Project Alpha
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn">View Project</p>
-                <p className="card__price text--medium">Free</p>
+                <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium">
+                <a href="https://dreamy-druid-458473.netlify.app/"  target='_blank'>
+
+                  <FaGithub/>
+                </a>
+                  </p>
               </div>
             </div>
           </div>
@@ -34,8 +40,8 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
               </div>
             </div>
           </div>
@@ -51,9 +57,9 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
-              </div>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
+                 </div>
             </div>
           </div>
           <div className="card">
@@ -68,8 +74,8 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
               </div>
             </div>
           </div>
@@ -85,8 +91,8 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
               </div>
             </div>
           </div>
@@ -102,8 +108,8 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
               </div>
             </div>
           </div>
@@ -119,8 +125,8 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium">View Project</p>
-                <p className="card__price text--medium">Free</p>
+              <p className="text--medium project-btn"><FaRocket/></p>
+                <p className="card__price text--medium"><FaGithub/></p>
               </div>
             </div>
           </div>

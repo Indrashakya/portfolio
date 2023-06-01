@@ -76,8 +76,11 @@
   .card__price {
     margin-left: auto;
     padding: 5px 20px;
-    background-color: #303032;
+    background-color: #3a678a;
     border-radius: 20px;
+  }
+  .card__price a{
+color:white;
   }
   
   @media only screen and (max-width: 1000px) {

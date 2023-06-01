@@ -1,14 +1,14 @@
 import './css/footer.css'
-import { FaGithub, FaLinkedin, FaFacebook, FaMailBulk, FaPhone} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaFacebook, FaMailBulk, FaPhone } from 'react-icons/fa'
 
 function Footer() {
     return (
         <footer>
-            <div class="row primary">
-                <div class="column about" style={{ textAlign: 'center' }}>
+            <div className="row primary">
+                <div className="column" style={{ textAlign: 'center' }}>
                     <h3>Indra Shakya</h3>
                     <p>Email: imshakya91@gmail.com</p>
-                    <div class="social">
+                    <div className="social">
                         <a href='https://github.com/Indrashakya' target={'_blank'}>
                             <FaGithub />
                         </a>
@@ -16,10 +16,11 @@ function Footer() {
                             <FaLinkedin />
                         </a>
 
-                        <a href="imshakya91@gmail.com" target={'_blank'}>
-                            <FaMailBulk/></a>
-                            <div>
-                            <a href="#312-785-7909"target={'_blank'} >
+                        <a href="mailto:imshakya91@gmail.com" target="_blank">
+                            <FaMailBulk />
+                        </a>
+                        <div>
+                            <a href="#312-785-7909" target={'_blank'} >
                                 <FaPhone /></a>
                         </div>
                     </div>
