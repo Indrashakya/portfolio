@@ -1,69 +1,72 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faCss3Alt, faHtml5, faReact, faFileCode, faBootstrap, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faCss3Alt, faHtml5, faReact, faBootstrap, faMicrosoft, faNodeJs, faMix } from '@fortawesome/free-brands-svg-icons';
 import Body from "../../container/body";
 import './skills.css';
-import { faCalculator, faFire, faFireAlt } from '@fortawesome/free-solid-svg-icons';
-import { useParams } from 'react-router-dom';
-import { Progress } from 'antd';
-import { ProgressBar } from 'react-bootstrap';
+import { faCalculator, faFireAlt, faMehBlank, faNoteSticky } from '@fortawesome/free-solid-svg-icons';
+import { RiNodeTree } from 'react-icons/ri';
+import { FaMix } from 'react-icons/fa';
 
 
 function Skills() {
   const skillsArray = [
     {
       name: "Javascript",
-      level: '70%',
+      level: '60',
       icon: faJs
     },
     {
       name: "CSS",
-      level: '70%',
+      level: '65',
       icon: faCss3Alt
     },
     {
-      name: "HTML",
-      level: '90%',
-      icon: faHtml5
-    },
-    {
       name: "BootStrap",
-      level: '70%',
+      level: '67',
       icon:faBootstrap
     },
     {
       name: "HTML5",
-      level: ()=>{
-        return(
-          <span>
-            <ProgressBar percent={parseInt(80)} width={80}/>
-          </span>
-        )
-      },
+      level: '70',
       icon: faHtml5
     },
     {
-      name: "React",
-      level: '70%',
+      name: "ReactJS",
+      level: '55',
       icon: faReact
     },
     {
       name: "Ag-Grid-react",
-      level: '70%',
+      level: '70',
       icon: faReact
     },
     {
       name: "Firebase",
-      level: '70%',
+      level: '70',
       icon: faFireAlt 
     },
     {
-      name: "MS Office ",
-      level: '70%',
-      icon: faMicrosoft 
+      name: "Redux ",
+      level: '75',
+      icon: faReact
+    },
+    {
+      name: "Notepad++ ",
+      level: '75',
+      icon: faNoteSticky
+    },
+    {
+      name: " Material UI ",
+      level: '75',
+      icon: faMehBlank
+    },
+    {
+      name: "IDE : VS code, Eclipse, Intellij Idea ",
+      level: '75',
+      icon: faMix
     },
     {
       name: "Accounting ",
-      level: '70%',
+      level: '75',
       icon: faCalculator
     },
   ];
@@ -88,9 +91,12 @@ function Skills() {
                       </div>
                       </div>
                     </p>
+                    <meter max='100' value={skill.level} style={{width:'100%'}}></meter>
+                    <br/>
+                    <br/>
                     <div className="card__info">
                       <p className="text--medium project-btn"></p>
-                      <p className="card__price text--medium">{skill.level}</p>
+                      <p className="card__price text--medium">{`${skill.level}%`}</p>
                     </div>
                   </div>
                 </div>

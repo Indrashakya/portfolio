@@ -114,6 +114,10 @@ textarea{
     background-color: #90acd1;
     background-position: left bottom;
 }
+.success-message {
+    color: green;
+    margin-top: 10px;
+  }
 
 @media (min-width: 1024px) {
     .contact-logo {
@@ -135,4 +139,8 @@ textarea{
     .contact-button {
         padding: 15px 43px;
     }
+    .success-message {
+        color: green;
+        margin-top: 10px;
+      }
 }

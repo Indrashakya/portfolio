@@ -20,7 +20,7 @@ const Projects = () => {
                 Note
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn"> <a href="https://dreamy-druid-458473.netlify.app/" target='_blank'>
+                <p className="text--medium card__price "> <a href="https://dreamy-druid-458473.netlify.app/" target='_blank'>
                   <FaRocket />
                 </a>
                 </p>
@@ -44,7 +44,7 @@ const Projects = () => {
                 Portfolio
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn"> <a href="https://portfolio-72eb3.web.app/" target='_blank'>
+                <p className="text--medium card__price "> <a href="https://portfolio-72eb3.web.app/" target='_blank'>
                   <FaRocket />
                 </a>
                 </p>
@@ -66,10 +66,27 @@ const Projects = () => {
             </div>
             <div className="card__content">
               <p className="card__title text--medium">
+                ecommerse 
+              </p>
+              <div className="card__info">
+                <p className="text--medium card__price "><FaRocket /></p>
+                <p className="card__price text--medium"><FaGithub /></p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="card">
+            <div className="card__image-container">
+              <img
+                src={comingsoon}
+                alt="Detailed image description would go here."
+              />
+            </div>
+            <div className="card__content">
+              <p className="card__title text--medium">
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn"><FaRocket /></p>
+                <p className="text--medium card__price "><FaRocket /></p>
                 <p className="card__price text--medium"><FaGithub /></p>
               </div>
             </div>
@@ -86,7 +103,7 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn"><FaRocket /></p>
+                <p className="text--medium card__price "><FaRocket /></p>
                 <p className="card__price text--medium"><FaGithub /></p>
               </div>
             </div>
@@ -103,28 +120,11 @@ const Projects = () => {
                 Here's the Title of an Awesome Course
               </p>
               <div className="card__info">
-                <p className="text--medium project-btn"><FaRocket /></p>
+                <p className="text--medium card__price "><FaRocket /></p>
                 <p className="card__price text--medium"><FaGithub /></p>
               </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card__image-container">
-              <img
-                src={comingsoon}
-                alt="Detailed image description would go here."
-              />
-            </div>
-            <div className="card__content">
-              <p className="card__title text--medium">
-                Here's the Title of an Awesome Course
-              </p>
-              <div className="card__info">
-                <p className="text--medium project-btn"><FaRocket /></p>
-                <p className="card__price text--medium"><FaGithub /></p>
-              </div>
-            </div>
-          </div>
+          </div> */}
         </section>
       </main>
     </div>

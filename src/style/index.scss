@@ -128,6 +128,20 @@ input[type="checkbox"] {
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
+  #about {
+
+    .main_name{
+      font-size: 2rem;
+    }
+  }
+  .Home {
+ 
+    
+    .description p{
+      width:100%;
+    font-size: 0.9rem;
+    }
+  }
   .menu {
     display: none;
     position: absolute;
@@ -204,6 +218,12 @@ input[type="checkbox"] {
   line-height: 1.5;
 }
 
+meter::-webkit-meter-optimum-value {
+  background: #3a678a;
+}
+meter::-moz-meter-bar { /* Firefox Pseudo Class */
+  background: #3a678a;
+}
 
 @import './contact';
 @import './home';

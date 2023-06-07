@@ -70,15 +70,17 @@
   .card__info {
     display: flex;
     align-self: end;
-    align-items: center;
+    align-items: center;justify-content: space-between;
   }
   
   .card__price {
-    margin-left: auto;
-    padding: 5px 20px;
+    padding: 8px 20px;
     background-color: #3a678a;
     border-radius: 20px;
   }
+  .card__price svg{
+  font-size: 1.25rem;
+}
   .card__price a{
 color:white;
   }

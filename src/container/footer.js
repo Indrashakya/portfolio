@@ -1,5 +1,5 @@
 import './css/footer.css'
-import { FaGithub, FaLinkedin, FaFacebook, FaMailBulk, FaPhone } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaFacebook, FaMailBulk, FaPhone, FaWhatsapp } from 'react-icons/fa'
 
 function Footer() {
     return (
@@ -21,7 +21,7 @@ function Footer() {
                         </a>
                         <div>
                             <a href="#312-785-7909" target={'_blank'} >
-                                <FaPhone /></a>
+                                <FaWhatsapp /></a>
                         </div>
                     </div>
                 </div>

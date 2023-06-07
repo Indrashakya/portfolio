@@ -1,11 +1,13 @@
 import { Component, createRef, useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
+import { RiCellphoneFill, RiLinkedinBoxFill, RiLinkedinLine, RiMessengerLine } from "react-icons/ri";
 import { RiWhatsappLine } from "react-icons/ri";
 import sendEmail from './sendEmail'
 import Body from "../../container/body";
+import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [name,setName]=useState('')
   const [email,setEmail]=useState('')
   const [message,setMessage]=useState('')
@@ -20,15 +22,13 @@ const Contact = () => {
     setName('')
 setEmail('')
 setMessage('')
-
+setIsSubmitted(true);
   }
   return (
     <Body>
       <section id="contact">
         <div className="container contact__container">
           <div className="contact__options">
-            {/* <h2>Get In Touch</h2>
-            <h2>Contact Me In</h2> */}
             <div className="contact__option">
               <MdOutlineEmail className="contact__option-icon" />
               <h4>Email</h4>
@@ -36,7 +36,7 @@ setMessage('')
               <a href="mailto:imshakya91@gmail.com">Send a message</a>
             </div>
             <div className="contact__option">
-              <RiMessengerLine className="contact__option-icon" />
+              <RiLinkedinBoxFill className="contact__option-icon" />
               <h4>linkedin</h4>
               <h5>Indra Shakya</h5>
               <a href="https://www.linkedin.com/in/indra-s-2a83621a5/">Connect with me</a>
@@ -44,7 +44,7 @@ setMessage('')
             <div className="contact__option">
               <RiWhatsappLine className="contact__option-icon" />
               <h4>Whatsapp</h4>
-              <h5>+1 3127957909</h5>
+              <h5><RiCellphoneFill/></h5>
               <a href="https://api.whatsapp.com/send?phone=13127857909">
                 Send a message
               </a>
@@ -52,7 +52,9 @@ setMessage('')
           </div>
 
           <form onSubmit={sendMail} action="" className="contact_form">
-            <h1>Contact me</h1>
+          <h1>
+            <FaEnvelope className="title-icon" /> Contact me
+          </h1>
             <div>
               <input
                 type="text"
@@ -60,7 +62,7 @@ setMessage('')
                 placeholder=" Full Name"
                 value={name}
                 onChange={(e)=>setName(e.target.value)}
-              // required
+              required
               />
             </div>
             <div>
@@ -71,7 +73,7 @@ setMessage('')
                 value={email}
                 onChange={(e)=>setEmail(e.target.value)}
 
-              // required
+              required
               />
             </div>
             <div>
@@ -82,14 +84,16 @@ setMessage('')
                 onChange={(e)=>setMessage(e.target.value)}
 
                 placeholder="Drop a message"
-              // required
+              required
               ></textarea>
             </div>
 
             <button type="submit" className="btn btn-primary" >
               Send Message
             </button>
-          </form>
+            {isSubmitted && <p className="success-message">Message sent successfully!</p>}
+        </form>
+        
         </div>
 
       </section>
